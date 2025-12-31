@@ -47,10 +47,20 @@ class HitsterGame {
     // Load song database for selected difficulty
     async loadSongDatabase() {
         const dbPath = GameConfig.songDatabases[this.difficulty];
-        
+        console.log('Loading songs from:', dbPath);
+        console.log('GameConfig:', GameConfig);
+
         try {
             const response = await fetch(dbPath);
+            console.log('Fetch response:', response.status, response.ok);
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
             const songs = await response.json();
+            console.log('Raw songs loaded:', songs.length);
+
             this.songDatabase = this.shuffleArray(songs);
             console.log(`Loaded ${this.songDatabase.length} songs for ${this.difficulty} difficulty`);
         } catch (error) {
@@ -71,24 +81,43 @@ class HitsterGame {
 
     // Give each team a starting anchor song
     async giveStartingSongs() {
+        console.log('giveStartingSongs called. Database has', this.songDatabase.length, 'songs');
+
         // Select two well-known songs from different decades as starting points
-        const startingSongs = this.songDatabase.filter(song => 
+        const startingSongs = this.songDatabase.filter(song =>
             !this.usedSongs.has(song.track)
         ).slice(0, 2);
 
+        console.log('Selected starting songs:', startingSongs.length);
+
+        if (startingSongs.length < 2) {
+            console.error('Not enough songs in database!');
+            alert('Error: Not enough songs loaded. Please refresh the page.');
+            return;
+        }
+
         for (let i = 0; i < 2; i++) {
             const song = startingSongs[i];
+            console.log(`Adding starting song ${i+1}:`, song.track, 'by', song.artist);
             this.usedSongs.add(song.track);
-            
-            // Search and get YouTube video info
-            const videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-            
+
+            // Search and get YouTube video info (don't let this block initialization)
+            let videoInfo = null;
+            try {
+                videoInfo = await youtubeManager.searchVideo(song.spotify_search);
+                console.log('YouTube search result for', song.track, ':', videoInfo ? 'found' : 'not found');
+            } catch (error) {
+                console.error('YouTube search failed for', song.track, ':', error);
+            }
+
             this.teams[i].timeline.push({
                 ...song,
                 videoId: videoInfo ? videoInfo.videoId : null,
                 isAnchor: true
             });
         }
+
+        console.log('Starting songs added. Used songs count:', this.usedSongs.size);
     }
 
     // Get current team
@@ -98,46 +127,59 @@ class HitsterGame {
 
     // Get next available song
     getNextSong() {
+        console.log('getNextSong called. Database size:', this.songDatabase.length);
+        console.log('Used songs count:', this.usedSongs.size);
+        console.log('Used songs:', Array.from(this.usedSongs));
+
         for (const song of this.songDatabase) {
             if (!this.usedSongs.has(song.track)) {
+                console.log('Found next song:', song.track);
                 return song;
             }
         }
+        console.error('No more songs available! All songs used.');
         return null; // No more songs available
     }
 
     // Draw a new song for the current team
     async drawSong() {
         const song = this.getNextSong();
-        
+
         if (!song) {
             alert('No more songs available!');
             return null;
         }
 
+        // Mark song as used immediately to prevent re-drawing
         this.usedSongs.add(song.track);
-        
-        // Search YouTube for the video
-        const videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-        
-        if (videoInfo) {
-            this.currentSong = {
-                ...song,
-                videoId: videoInfo.videoId,
-                thumbnail: videoInfo.thumbnail
-            };
+        console.log('Drew song:', song.track, 'by', song.artist, '(', song.year, ')');
 
-            // Play the video
-            await youtubeManager.playVideo(videoInfo.videoId);
-            
-            this.placementMode = true;
-            
-            return this.currentSong;
-        } else {
-            console.error('Could not find song on YouTube:', song);
-            // Try next song
-            return await this.drawSong();
+        // Try to search YouTube for the video (optional - game works without it)
+        let videoInfo = null;
+        try {
+            videoInfo = await youtubeManager.searchVideo(song.spotify_search);
+            if (videoInfo) {
+                console.log('YouTube video found for:', song.track);
+                // Play the video
+                await youtubeManager.playVideo(videoInfo.videoId);
+            } else {
+                console.warn('No YouTube video found for:', song.track, '- continuing without audio');
+            }
+        } catch (error) {
+            console.error('YouTube search failed for:', song.track, error);
+            console.warn('Continuing without audio playback');
         }
+
+        // Create current song (with or without YouTube video)
+        this.currentSong = {
+            ...song,
+            videoId: videoInfo ? videoInfo.videoId : null,
+            thumbnail: videoInfo ? videoInfo.thumbnail : null
+        };
+
+        this.placementMode = true;
+
+        return this.currentSong;
     }
 
     // Place song in timeline at specified index
