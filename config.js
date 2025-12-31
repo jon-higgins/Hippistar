@@ -23,9 +23,9 @@ const GameConfig = {
     
     // Song database paths
     songDatabases: {
-        easy: 'data/songs-easy.json',
-        medium: 'data/songs-medium.json',
-        hard: 'data/songs-hard.json'
+        easy: 'songs-easy.json',
+        medium: 'songs-medium.json',
+        hard: 'songs-hard.json'
     }
 };
 
