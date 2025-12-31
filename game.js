@@ -144,35 +144,42 @@ class HitsterGame {
     // Draw a new song for the current team
     async drawSong() {
         const song = this.getNextSong();
-        
+
         if (!song) {
             alert('No more songs available!');
             return null;
         }
 
+        // Mark song as used immediately to prevent re-drawing
         this.usedSongs.add(song.track);
-        
-        // Search YouTube for the video
-        const videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-        
-        if (videoInfo) {
-            this.currentSong = {
-                ...song,
-                videoId: videoInfo.videoId,
-                thumbnail: videoInfo.thumbnail
-            };
+        console.log('Drew song:', song.track, 'by', song.artist, '(', song.year, ')');
 
-            // Play the video
-            await youtubeManager.playVideo(videoInfo.videoId);
-            
-            this.placementMode = true;
-            
-            return this.currentSong;
-        } else {
-            console.error('Could not find song on YouTube:', song);
-            // Try next song
-            return await this.drawSong();
+        // Try to search YouTube for the video (optional - game works without it)
+        let videoInfo = null;
+        try {
+            videoInfo = await youtubeManager.searchVideo(song.spotify_search);
+            if (videoInfo) {
+                console.log('YouTube video found for:', song.track);
+                // Play the video
+                await youtubeManager.playVideo(videoInfo.videoId);
+            } else {
+                console.warn('No YouTube video found for:', song.track, '- continuing without audio');
+            }
+        } catch (error) {
+            console.error('YouTube search failed for:', song.track, error);
+            console.warn('Continuing without audio playback');
         }
+
+        // Create current song (with or without YouTube video)
+        this.currentSong = {
+            ...song,
+            videoId: videoInfo ? videoInfo.videoId : null,
+            thumbnail: videoInfo ? videoInfo.thumbnail : null
+        };
+
+        this.placementMode = true;
+
+        return this.currentSong;
     }
 
     // Place song in timeline at specified index
