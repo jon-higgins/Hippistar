@@ -47,10 +47,20 @@ class HitsterGame {
     // Load song database for selected difficulty
     async loadSongDatabase() {
         const dbPath = GameConfig.songDatabases[this.difficulty];
-        
+        console.log('Loading songs from:', dbPath);
+        console.log('GameConfig:', GameConfig);
+
         try {
             const response = await fetch(dbPath);
+            console.log('Fetch response:', response.status, response.ok);
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
             const songs = await response.json();
+            console.log('Raw songs loaded:', songs.length);
+
             this.songDatabase = this.shuffleArray(songs);
             console.log(`Loaded ${this.songDatabase.length} songs for ${this.difficulty} difficulty`);
         } catch (error) {
@@ -98,11 +108,17 @@ class HitsterGame {
 
     // Get next available song
     getNextSong() {
+        console.log('getNextSong called. Database size:', this.songDatabase.length);
+        console.log('Used songs count:', this.usedSongs.size);
+        console.log('Used songs:', Array.from(this.usedSongs));
+
         for (const song of this.songDatabase) {
             if (!this.usedSongs.has(song.track)) {
+                console.log('Found next song:', song.track);
                 return song;
             }
         }
+        console.error('No more songs available! All songs used.');
         return null; // No more songs available
     }
 
