@@ -409,37 +409,41 @@ body {
     right: 0;
     bottom: 0;
     display: none;
-    flex-direction: column;
-    gap: 10px;
+    pointer-events: none;
 }
 
 .placement-zones.active {
-    display: flex;
+    display: block;
 }
 
 .placement-zone {
-    flex: 1;
-    background: rgba(255, 215, 0, 0.2);
-    border: 2px dashed rgba(255, 215, 0, 0.5);
-    border-radius: 10px;
+    background: rgba(255, 215, 0, 0.15);
+    border: 3px dashed rgba(255, 215, 0, 0.6);
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
+    min-height: 80px;
+    margin: 5px 0;
+    position: relative;
 }
 
 .placement-zone:hover {
     background: rgba(255, 215, 0, 0.3);
     border-color: #ffd700;
-    transform: scale(1.02);
+    border-width: 4px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
-.placement-zone::before {
-    content: 'Click to place here';
-    color: rgba(255, 255, 255, 0.7);
+.zone-label {
+    color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 /* Game Controls */
