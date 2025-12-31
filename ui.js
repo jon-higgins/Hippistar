@@ -140,41 +140,42 @@ class GameUI {
     showPlacementZones(teamIndex) {
         const team = game.teams[teamIndex];
         const timeline = team.timeline;
-        const zonesContainer = document.getElementById(`team${teamIndex + 1}-placement-zones`);
-        
-        zonesContainer.innerHTML = '';
-        zonesContainer.classList.add('active');
+        const timelineElement = document.getElementById(`team${teamIndex + 1}-timeline`);
 
-        // Create placement zones (before, between, and after songs)
+        // Clear timeline and rebuild with placement zones interleaved
+        timelineElement.innerHTML = '';
+
+        // Create placement zones interleaved with song cards
         for (let i = 0; i <= timeline.length; i++) {
+            // Add a placement zone
             const zone = document.createElement('div');
             zone.className = 'placement-zone';
             zone.dataset.index = i;
-            
+            zone.innerHTML = '<span class="zone-label">📍 Place here</span>';
+
             zone.addEventListener('click', () => {
                 this.handlePlacement(teamIndex, i);
             });
 
-            zonesContainer.appendChild(zone);
+            timelineElement.appendChild(zone);
+
+            // Add the song card after the zone (except after the last zone)
+            if (i < timeline.length) {
+                const song = timeline[i];
+                const card = this.createSongCard(song, song.isAnchor);
+                timelineElement.appendChild(card);
+            }
         }
     }
 
     // Handle song placement
     async handlePlacement(teamIndex, insertIndex) {
-        // Hide placement zones
-        document.querySelectorAll('.placement-zones').forEach(zones => {
-            zones.classList.remove('active');
-            zones.innerHTML = '';
-        });
-
-        document.getElementById('placement-instructions').classList.add('hidden');
-
         const result = game.placeSong(teamIndex, insertIndex);
 
         // Show result
         this.showResult(result);
 
-        // Update timelines
+        // Update timelines (this will remove placement zones)
         this.renderTimelines();
 
         // Check for victory
@@ -191,6 +192,9 @@ class GameUI {
                 document.getElementById('draw-card-btn').disabled = false;
             }, 3000);
         }
+
+        // Hide placement instructions
+        document.getElementById('placement-instructions').classList.add('hidden');
     }
 
     // Show placement result
@@ -231,6 +235,12 @@ class GameUI {
 
             // Update score
             document.getElementById(`team${index + 1}-score`).textContent = team.score;
+        });
+
+        // Clear any active placement zones
+        document.querySelectorAll('.placement-zones').forEach(zones => {
+            zones.classList.remove('active');
+            zones.innerHTML = '';
         });
     }
 
