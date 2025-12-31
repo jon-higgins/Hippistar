@@ -1,0 +1,701 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Loading Screen */
+#loading-screen {
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.loading-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Setup Screen */
+#setup-screen {
+    justify-content: center;
+    align-items: center;
+}
+
+.setup-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.setup-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.setup-section {
+    margin-bottom: 30px;
+}
+
+.setup-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.team-inputs {
+    display: flex;
+    gap: 15px;
+}
+
+.team-inputs input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.difficulty-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.difficulty-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.difficulty-option:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.difficulty-option input[type="radio"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.difficulty-label {
+    flex: 1;
+}
+
+.difficulty-label strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.difficulty-label small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.setup-section label {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.setup-section input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-danger {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background: #ff3838;
+}
+
+/* Game Screen */
+#game-screen {
+    padding: 0;
+}
+
+.game-header {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.game-header h1 {
+    font-size: 1.8rem;
+}
+
+.current-song {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.song-artist {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.song-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.playback-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-icon {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-icon:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-icon:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #ffd700;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* Game Main Area */
+.game-main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.team-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.team-section.active-team {
+    background: rgba(255, 215, 0, 0.15);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-header h2 {
+    font-size: 1.5rem;
+}
+
+.team-score {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.timeline-container {
+    position: relative;
+    min-height: 400px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.song-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.song-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+.song-card.anchor {
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.5);
+}
+
+.song-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    min-width: 60px;
+}
+
+.song-details {
+    flex: 1;
+}
+
+.song-card-artist {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.song-card-title {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.anchor-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ffd700;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.placement-zones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.placement-zones.active {
+    display: flex;
+}
+
+.placement-zone {
+    flex: 1;
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px dashed rgba(255, 215, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+}
+
+.placement-zone:hover {
+    background: rgba(255, 215, 0, 0.3);
+    border-color: #ffd700;
+    transform: scale(1.02);
+}
+
+.placement-zone::before {
+    content: 'Click to place here';
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+/* Game Controls */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+.turn-indicator {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.turn-indicator strong {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.instructions.hidden {
+    display: none;
+}
+
+.result-display {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    animation: slideIn 0.3s ease-out;
+}
+
+.result-display.hidden {
+    display: none;
+}
+
+.result-display.correct {
+    background: rgba(46, 213, 115, 0.3);
+    border: 2px solid #2ed573;
+}
+
+.result-display.incorrect {
+    background: rgba(255, 71, 87, 0.3);
+    border: 2px solid #ff4757;
+}
+
+.result-display h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Victory Screen */
+#victory-screen {
+    justify-content: center;
+    align-items: center;
+}
+
+.victory-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.victory-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite;
+}
+
+.victory-content h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.victory-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat strong {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.victory-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.btn-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.setting-item {
+    margin-bottom: 20px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.setting-item input[type="range"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.setting-item select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .game-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .game-controls {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .current-song {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .team-inputs {
+        flex-direction: column;
+    }
+
+    .victory-buttons {
+        flex-direction: column;
+    }
+}

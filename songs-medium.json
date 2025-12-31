@@ -1,0 +1,1017 @@
+[
+  {
+    "artist": "The Temptations",
+    "track": "My Girl",
+    "year": 1964,
+    "difficulty": "medium",
+    "spotify_search": "My Girl The Temptations"
+  },
+  {
+    "artist": "The Monkees",
+    "track": "I'm a Believer",
+    "year": 1966,
+    "difficulty": "medium",
+    "spotify_search": "I'm a Believer The Monkees"
+  },
+  {
+    "artist": "Procol Harum",
+    "track": "A Whiter Shade of Pale",
+    "year": 1967,
+    "difficulty": "medium",
+    "spotify_search": "A Whiter Shade of Pale Procol Harum"
+  },
+  {
+    "artist": "The Turtles",
+    "track": "Happy Together",
+    "year": 1967,
+    "difficulty": "medium",
+    "spotify_search": "Happy Together The Turtles"
+  },
+  {
+    "artist": "Three Dog Night",
+    "track": "Joy to the World",
+    "year": 1970,
+    "difficulty": "medium",
+    "spotify_search": "Joy to the World Three Dog Night"
+  },
+  {
+    "artist": "The Carpenters",
+    "track": "Close to You",
+    "year": 1970,
+    "difficulty": "medium",
+    "spotify_search": "Close to You Carpenters"
+  },
+  {
+    "artist": "Marvin Gaye",
+    "track": "Let's Get It On",
+    "year": 1973,
+    "difficulty": "medium",
+    "spotify_search": "Let's Get It On Marvin Gaye"
+  },
+  {
+    "artist": "Roberta Flack",
+    "track": "Killing Me Softly with His Song",
+    "year": 1973,
+    "difficulty": "medium",
+    "spotify_search": "Killing Me Softly Roberta Flack"
+  },
+  {
+    "artist": "Labelle",
+    "track": "Lady Marmalade",
+    "year": 1974,
+    "difficulty": "medium",
+    "spotify_search": "Lady Marmalade Labelle"
+  },
+  {
+    "artist": "George McCrae",
+    "track": "Rock Your Baby",
+    "year": 1974,
+    "difficulty": "medium",
+    "spotify_search": "Rock Your Baby George McCrae"
+  },
+  {
+    "artist": "KC and the Sunshine Band",
+    "track": "That's the Way (I Like It)",
+    "year": 1975,
+    "difficulty": "medium",
+    "spotify_search": "That's the Way I Like It KC and the Sunshine Band"
+  },
+  {
+    "artist": "Stevie Wonder",
+    "track": "Superstition",
+    "year": 1972,
+    "difficulty": "medium",
+    "spotify_search": "Superstition Stevie Wonder"
+  },
+  {
+    "artist": "Wild Cherry",
+    "track": "Play That Funky Music",
+    "year": 1976,
+    "difficulty": "medium",
+    "spotify_search": "Play That Funky Music Wild Cherry"
+  },
+  {
+    "artist": "Silver Convention",
+    "track": "Fly, Robin, Fly",
+    "year": 1975,
+    "difficulty": "medium",
+    "spotify_search": "Fly Robin Fly Silver Convention"
+  },
+  {
+    "artist": "Boston",
+    "track": "More Than a Feeling",
+    "year": 1976,
+    "difficulty": "medium",
+    "spotify_search": "More Than a Feeling Boston"
+  },
+  {
+    "artist": "Steve Miller Band",
+    "track": "Fly Like an Eagle",
+    "year": 1976,
+    "difficulty": "medium",
+    "spotify_search": "Fly Like an Eagle Steve Miller Band"
+  },
+  {
+    "artist": "Andy Gibb",
+    "track": "Shadow Dancing",
+    "year": 1978,
+    "difficulty": "medium",
+    "spotify_search": "Shadow Dancing Andy Gibb"
+  },
+  {
+    "artist": "The Knack",
+    "track": "My Sharona",
+    "year": 1979,
+    "difficulty": "medium",
+    "spotify_search": "My Sharona The Knack"
+  },
+  {
+    "artist": "The Police",
+    "track": "Message in a Bottle",
+    "year": 1979,
+    "difficulty": "medium",
+    "spotify_search": "Message in a Bottle The Police"
+  },
+  {
+    "artist": "Lipps Inc.",
+    "track": "Funkytown",
+    "year": 1980,
+    "difficulty": "medium",
+    "spotify_search": "Funkytown Lipps Inc"
+  },
+  {
+    "artist": "Joan Jett & the Blackhearts",
+    "track": "I Love Rock 'n Roll",
+    "year": 1981,
+    "difficulty": "medium",
+    "spotify_search": "I Love Rock n Roll Joan Jett"
+  },
+  {
+    "artist": "Olivia Newton-John",
+    "track": "Physical",
+    "year": 1981,
+    "difficulty": "medium",
+    "spotify_search": "Physical Olivia Newton-John"
+  },
+  {
+    "artist": "Soft Cell",
+    "track": "Tainted Love",
+    "year": 1981,
+    "difficulty": "medium",
+    "spotify_search": "Tainted Love Soft Cell"
+  },
+  {
+    "artist": "The Human League",
+    "track": "Don't You Want Me",
+    "year": 1981,
+    "difficulty": "medium",
+    "spotify_search": "Don't You Want Me Human League"
+  },
+  {
+    "artist": "Paul McCartney & Stevie Wonder",
+    "track": "Ebony and Ivory",
+    "year": 1982,
+    "difficulty": "medium",
+    "spotify_search": "Ebony and Ivory Paul McCartney Stevie Wonder"
+  },
+  {
+    "artist": "Men at Work",
+    "track": "Down Under",
+    "year": 1982,
+    "difficulty": "medium",
+    "spotify_search": "Down Under Men at Work"
+  },
+  {
+    "artist": "Dexys Midnight Runners",
+    "track": "Come On Eileen",
+    "year": 1982,
+    "difficulty": "medium",
+    "spotify_search": "Come On Eileen Dexys Midnight Runners"
+  },
+  {
+    "artist": "The Police",
+    "track": "Every Breath You Take",
+    "year": 1983,
+    "difficulty": "medium",
+    "spotify_search": "Every Breath You Take The Police"
+  },
+  {
+    "artist": "Eurythmics",
+    "track": "Sweet Dreams (Are Made of This)",
+    "year": 1983,
+    "difficulty": "medium",
+    "spotify_search": "Sweet Dreams Eurythmics"
+  },
+  {
+    "artist": "Bonnie Tyler",
+    "track": "Total Eclipse of the Heart",
+    "year": 1983,
+    "difficulty": "medium",
+    "spotify_search": "Total Eclipse of the Heart Bonnie Tyler"
+  },
+  {
+    "artist": "Duran Duran",
+    "track": "Hungry Like the Wolf",
+    "year": 1982,
+    "difficulty": "medium",
+    "spotify_search": "Hungry Like the Wolf Duran Duran"
+  },
+  {
+    "artist": "Van Halen",
+    "track": "Jump",
+    "year": 1984,
+    "difficulty": "medium",
+    "spotify_search": "Jump Van Halen"
+  },
+  {
+    "artist": "Chaka Khan",
+    "track": "I Feel for You",
+    "year": 1984,
+    "difficulty": "medium",
+    "spotify_search": "I Feel for You Chaka Khan"
+  },
+  {
+    "artist": "Frankie Goes to Hollywood",
+    "track": "Relax",
+    "year": 1984,
+    "difficulty": "medium",
+    "spotify_search": "Relax Frankie Goes to Hollywood"
+  },
+  {
+    "artist": "Tears for Fears",
+    "track": "Everybody Wants to Rule the World",
+    "year": 1985,
+    "difficulty": "medium",
+    "spotify_search": "Everybody Wants to Rule the World Tears for Fears"
+  },
+  {
+    "artist": "Dire Straits",
+    "track": "Money for Nothing",
+    "year": 1985,
+    "difficulty": "medium",
+    "spotify_search": "Money for Nothing Dire Straits"
+  },
+  {
+    "artist": "Simple Minds",
+    "track": "Don't You (Forget About Me)",
+    "year": 1985,
+    "difficulty": "medium",
+    "spotify_search": "Don't You Forget About Me Simple Minds"
+  },
+  {
+    "artist": "Starship",
+    "track": "We Built This City",
+    "year": 1985,
+    "difficulty": "medium",
+    "spotify_search": "We Built This City Starship"
+  },
+  {
+    "artist": "Peter Gabriel",
+    "track": "Sledgehammer",
+    "year": 1986,
+    "difficulty": "medium",
+    "spotify_search": "Sledgehammer Peter Gabriel"
+  },
+  {
+    "artist": "Europe",
+    "track": "The Final Countdown",
+    "year": 1986,
+    "difficulty": "medium",
+    "spotify_search": "The Final Countdown Europe"
+  },
+  {
+    "artist": "Bon Jovi",
+    "track": "Livin' on a Prayer",
+    "year": 1986,
+    "difficulty": "medium",
+    "spotify_search": "Livin on a Prayer Bon Jovi"
+  },
+  {
+    "artist": "Bananarama",
+    "track": "Venus",
+    "year": 1986,
+    "difficulty": "medium",
+    "spotify_search": "Venus Bananarama"
+  },
+  {
+    "artist": "Billy Idol",
+    "track": "Mony Mony",
+    "year": 1987,
+    "difficulty": "medium",
+    "spotify_search": "Mony Mony Billy Idol"
+  },
+  {
+    "artist": "INXS",
+    "track": "Need You Tonight",
+    "year": 1987,
+    "difficulty": "medium",
+    "spotify_search": "Need You Tonight INXS"
+  },
+  {
+    "artist": "Def Leppard",
+    "track": "Pour Some Sugar on Me",
+    "year": 1987,
+    "difficulty": "medium",
+    "spotify_search": "Pour Some Sugar on Me Def Leppard"
+  },
+  {
+    "artist": "Belinda Carlisle",
+    "track": "Heaven Is a Place on Earth",
+    "year": 1987,
+    "difficulty": "medium",
+    "spotify_search": "Heaven Is a Place on Earth Belinda Carlisle"
+  },
+  {
+    "artist": "New Order",
+    "track": "Blue Monday",
+    "year": 1983,
+    "difficulty": "medium",
+    "spotify_search": "Blue Monday New Order"
+  },
+  {
+    "artist": "Tiffany",
+    "track": "I Think We're Alone Now",
+    "year": 1987,
+    "difficulty": "medium",
+    "spotify_search": "I Think We're Alone Now Tiffany"
+  },
+  {
+    "artist": "Tracy Chapman",
+    "track": "Fast Car",
+    "year": 1988,
+    "difficulty": "medium",
+    "spotify_search": "Fast Car Tracy Chapman"
+  },
+  {
+    "artist": "Poison",
+    "track": "Every Rose Has Its Thorn",
+    "year": 1988,
+    "difficulty": "medium",
+    "spotify_search": "Every Rose Has Its Thorn Poison"
+  },
+  {
+    "artist": "Simply Red",
+    "track": "If You Don't Know Me by Now",
+    "year": 1989,
+    "difficulty": "medium",
+    "spotify_search": "If You Don't Know Me by Now Simply Red"
+  },
+  {
+    "artist": "Paula Abdul",
+    "track": "Straight Up",
+    "year": 1988,
+    "difficulty": "medium",
+    "spotify_search": "Straight Up Paula Abdul"
+  },
+  {
+    "artist": "Technotronic",
+    "track": "Pump Up the Jam",
+    "year": 1989,
+    "difficulty": "medium",
+    "spotify_search": "Pump Up the Jam Technotronic"
+  },
+  {
+    "artist": "Janet Jackson",
+    "track": "Rhythm Nation",
+    "year": 1989,
+    "difficulty": "medium",
+    "spotify_search": "Rhythm Nation Janet Jackson"
+  },
+  {
+    "artist": "Sinéad O'Connor",
+    "track": "Nothing Compares 2 U",
+    "year": 1990,
+    "difficulty": "medium",
+    "spotify_search": "Nothing Compares 2 U Sinead O'Connor"
+  },
+  {
+    "artist": "Wilson Phillips",
+    "track": "Hold On",
+    "year": 1990,
+    "difficulty": "medium",
+    "spotify_search": "Hold On Wilson Phillips"
+  },
+  {
+    "artist": "Snap!",
+    "track": "The Power",
+    "year": 1990,
+    "difficulty": "medium",
+    "spotify_search": "The Power Snap"
+  },
+  {
+    "artist": "C+C Music Factory",
+    "track": "Gonna Make You Sweat (Everybody Dance Now)",
+    "year": 1990,
+    "difficulty": "medium",
+    "spotify_search": "Gonna Make You Sweat C+C Music Factory"
+  },
+  {
+    "artist": "EMF",
+    "track": "Unbelievable",
+    "year": 1990,
+    "difficulty": "medium",
+    "spotify_search": "Unbelievable EMF"
+  },
+  {
+    "artist": "Color Me Badd",
+    "track": "I Wanna Sex You Up",
+    "year": 1991,
+    "difficulty": "medium",
+    "spotify_search": "I Wanna Sex You Up Color Me Badd"
+  },
+  {
+    "artist": "Bryan Adams",
+    "track": "(Everything I Do) I Do It for You",
+    "year": 1991,
+    "difficulty": "medium",
+    "spotify_search": "Everything I Do I Do It for You Bryan Adams"
+  },
+  {
+    "artist": "Jesus Jones",
+    "track": "Right Here, Right Now",
+    "year": 1991,
+    "difficulty": "medium",
+    "spotify_search": "Right Here Right Now Jesus Jones"
+  },
+  {
+    "artist": "Pearl Jam",
+    "track": "Alive",
+    "year": 1991,
+    "difficulty": "medium",
+    "spotify_search": "Alive Pearl Jam"
+  },
+  {
+    "artist": "Boyz II Men",
+    "track": "End of the Road",
+    "year": 1992,
+    "difficulty": "medium",
+    "spotify_search": "End of the Road Boyz II Men"
+  },
+  {
+    "artist": "Sir Mix-a-Lot",
+    "track": "Baby Got Back",
+    "year": 1992,
+    "difficulty": "medium",
+    "spotify_search": "Baby Got Back Sir Mix-a-Lot"
+  },
+  {
+    "artist": "Red Hot Chili Peppers",
+    "track": "Under the Bridge",
+    "year": 1992,
+    "difficulty": "medium",
+    "spotify_search": "Under the Bridge Red Hot Chili Peppers"
+  },
+  {
+    "artist": "TLC",
+    "track": "Waterfalls",
+    "year": 1994,
+    "difficulty": "medium",
+    "spotify_search": "Waterfalls TLC"
+  },
+  {
+    "artist": "Meat Loaf",
+    "track": "I'd Do Anything for Love (But I Won't Do That)",
+    "year": 1993,
+    "difficulty": "medium",
+    "spotify_search": "I'd Do Anything for Love Meat Loaf"
+  },
+  {
+    "artist": "Snoop Dogg",
+    "track": "Gin and Juice",
+    "year": 1993,
+    "difficulty": "medium",
+    "spotify_search": "Gin and Juice Snoop Dogg"
+  },
+  {
+    "artist": "2Pac",
+    "track": "California Love",
+    "year": 1995,
+    "difficulty": "medium",
+    "spotify_search": "California Love 2Pac"
+  },
+  {
+    "artist": "The Cranberries",
+    "track": "Zombie",
+    "year": 1994,
+    "difficulty": "medium",
+    "spotify_search": "Zombie The Cranberries"
+  },
+  {
+    "artist": "Blur",
+    "track": "Song 2",
+    "year": 1997,
+    "difficulty": "medium",
+    "spotify_search": "Song 2 Blur"
+  },
+  {
+    "artist": "Natalie Imbruglia",
+    "track": "Torn",
+    "year": 1997,
+    "difficulty": "medium",
+    "spotify_search": "Torn Natalie Imbruglia"
+  },
+  {
+    "artist": "Chumbawamba",
+    "track": "Tubthumping",
+    "year": 1997,
+    "difficulty": "medium",
+    "spotify_search": "Tubthumping Chumbawamba"
+  },
+  {
+    "artist": "Usher",
+    "track": "U Remind Me",
+    "year": 2001,
+    "difficulty": "medium",
+    "spotify_search": "U Remind Me Usher"
+  },
+  {
+    "artist": "Norah Jones",
+    "track": "Don't Know Why",
+    "year": 2002,
+    "difficulty": "medium",
+    "spotify_search": "Don't Know Why Norah Jones"
+  },
+  {
+    "artist": "The White Stripes",
+    "track": "Seven Nation Army",
+    "year": 2003,
+    "difficulty": "medium",
+    "spotify_search": "Seven Nation Army White Stripes"
+  },
+  {
+    "artist": "Evanescence",
+    "track": "Bring Me to Life",
+    "year": 2003,
+    "difficulty": "medium",
+    "spotify_search": "Bring Me to Life Evanescence"
+  },
+  {
+    "artist": "Fountains of Wayne",
+    "track": "Stacy's Mom",
+    "year": 2003,
+    "difficulty": "medium",
+    "spotify_search": "Stacy's Mom Fountains of Wayne"
+  },
+  {
+    "artist": "Franz Ferdinand",
+    "track": "Take Me Out",
+    "year": 2004,
+    "difficulty": "medium",
+    "spotify_search": "Take Me Out Franz Ferdinand"
+  },
+  {
+    "artist": "Kanye West",
+    "track": "Gold Digger",
+    "year": 2005,
+    "difficulty": "medium",
+    "spotify_search": "Gold Digger Kanye West"
+  },
+  {
+    "artist": "Daniel Powter",
+    "track": "Bad Day",
+    "year": 2005,
+    "difficulty": "medium",
+    "spotify_search": "Bad Day Daniel Powter"
+  },
+  {
+    "artist": "Gnarls Barkley",
+    "track": "Crazy",
+    "year": 2006,
+    "difficulty": "medium",
+    "spotify_search": "Crazy Gnarls Barkley"
+  },
+  {
+    "artist": "Nelly Furtado",
+    "track": "Maneater",
+    "year": 2006,
+    "difficulty": "medium",
+    "spotify_search": "Maneater Nelly Furtado"
+  },
+  {
+    "artist": "Fergie",
+    "track": "Glamorous",
+    "year": 2006,
+    "difficulty": "medium",
+    "spotify_search": "Glamorous Fergie"
+  },
+  {
+    "artist": "Mika",
+    "track": "Grace Kelly",
+    "year": 2007,
+    "difficulty": "medium",
+    "spotify_search": "Grace Kelly Mika"
+  },
+  {
+    "artist": "Soulja Boy",
+    "track": "Crank That (Soulja Boy)",
+    "year": 2007,
+    "difficulty": "medium",
+    "spotify_search": "Crank That Soulja Boy"
+  },
+  {
+    "artist": "Alicia Keys",
+    "track": "No One",
+    "year": 2007,
+    "difficulty": "medium",
+    "spotify_search": "No One Alicia Keys"
+  },
+  {
+    "artist": "Katy Perry",
+    "track": "Hot n Cold",
+    "year": 2008,
+    "difficulty": "medium",
+    "spotify_search": "Hot n Cold Katy Perry"
+  },
+  {
+    "artist": "Coldplay",
+    "track": "Viva la Vida",
+    "year": 2008,
+    "difficulty": "medium",
+    "spotify_search": "Viva la Vida Coldplay"
+  },
+  {
+    "artist": "T.I.",
+    "track": "Whatever You Like",
+    "year": 2008,
+    "difficulty": "medium",
+    "spotify_search": "Whatever You Like T.I."
+  },
+  {
+    "artist": "Beyoncé",
+    "track": "Single Ladies (Put a Ring on It)",
+    "year": 2008,
+    "difficulty": "medium",
+    "spotify_search": "Single Ladies Beyonce"
+  },
+  {
+    "artist": "Owl City",
+    "track": "Fireflies",
+    "year": 2009,
+    "difficulty": "medium",
+    "spotify_search": "Fireflies Owl City"
+  },
+  {
+    "artist": "Jason Derulo",
+    "track": "Whatcha Say",
+    "year": 2009,
+    "difficulty": "medium",
+    "spotify_search": "Whatcha Say Jason Derulo"
+  },
+  {
+    "artist": "Jay-Z ft. Alicia Keys",
+    "track": "Empire State of Mind",
+    "year": 2009,
+    "difficulty": "medium",
+    "spotify_search": "Empire State of Mind Jay-Z Alicia Keys"
+  },
+  {
+    "artist": "Train",
+    "track": "Hey, Soul Sister",
+    "year": 2009,
+    "difficulty": "medium",
+    "spotify_search": "Hey Soul Sister Train"
+  },
+  {
+    "artist": "B.o.B ft. Hayley Williams",
+    "track": "Airplanes",
+    "year": 2010,
+    "difficulty": "medium",
+    "spotify_search": "Airplanes B.o.B Hayley Williams"
+  },
+  {
+    "artist": "Enrique Iglesias ft. Pitbull",
+    "track": "I Like It",
+    "year": 2010,
+    "difficulty": "medium",
+    "spotify_search": "I Like It Enrique Iglesias"
+  },
+  {
+    "artist": "Eminem ft. Rihanna",
+    "track": "Love the Way You Lie",
+    "year": 2010,
+    "difficulty": "medium",
+    "spotify_search": "Love the Way You Lie Eminem Rihanna"
+  },
+  {
+    "artist": "Katy Perry ft. Snoop Dogg",
+    "track": "California Gurls",
+    "year": 2010,
+    "difficulty": "medium",
+    "spotify_search": "California Gurls Katy Perry"
+  },
+  {
+    "artist": "Foster the People",
+    "track": "Pumped Up Kicks",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "Pumped Up Kicks Foster the People"
+  },
+  {
+    "artist": "Nicki Minaj",
+    "track": "Super Bass",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "Super Bass Nicki Minaj"
+  },
+  {
+    "artist": "Rihanna ft. Calvin Harris",
+    "track": "We Found Love",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "We Found Love Rihanna Calvin Harris"
+  },
+  {
+    "artist": "Pitbull ft. Ne-Yo",
+    "track": "Give Me Everything",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "Give Me Everything Pitbull"
+  },
+  {
+    "artist": "Maroon 5 ft. Christina Aguilera",
+    "track": "Moves Like Jagger",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "Moves Like Jagger Maroon 5"
+  },
+  {
+    "artist": "One Direction",
+    "track": "What Makes You Beautiful",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "What Makes You Beautiful One Direction"
+  },
+  {
+    "artist": "Ellie Goulding",
+    "track": "Lights",
+    "year": 2011,
+    "difficulty": "medium",
+    "spotify_search": "Lights Ellie Goulding"
+  },
+  {
+    "artist": "Flo Rida",
+    "track": "Whistle",
+    "year": 2012,
+    "difficulty": "medium",
+    "spotify_search": "Whistle Flo Rida"
+  },
+  {
+    "artist": "Macklemore & Ryan Lewis",
+    "track": "Thrift Shop",
+    "year": 2012,
+    "difficulty": "medium",
+    "spotify_search": "Thrift Shop Macklemore Ryan Lewis"
+  },
+  {
+    "artist": "Taylor Swift",
+    "track": "We Are Never Ever Getting Back Together",
+    "year": 2012,
+    "difficulty": "medium",
+    "spotify_search": "We Are Never Ever Getting Back Together Taylor Swift"
+  },
+  {
+    "artist": "Passenger",
+    "track": "Let Her Go",
+    "year": 2012,
+    "difficulty": "medium",
+    "spotify_search": "Let Her Go Passenger"
+  },
+  {
+    "artist": "Imagine Dragons",
+    "track": "Radioactive",
+    "year": 2012,
+    "difficulty": "medium",
+    "spotify_search": "Radioactive Imagine Dragons"
+  },
+  {
+    "artist": "Miley Cyrus",
+    "track": "Wrecking Ball",
+    "year": 2013,
+    "difficulty": "medium",
+    "spotify_search": "Wrecking Ball Miley Cyrus"
+  },
+  {
+    "artist": "Avicii",
+    "track": "Wake Me Up",
+    "year": 2013,
+    "difficulty": "medium",
+    "spotify_search": "Wake Me Up Avicii"
+  },
+  {
+    "artist": "Daft Punk ft. Pharrell Williams",
+    "track": "Get Lucky",
+    "year": 2013,
+    "difficulty": "medium",
+    "spotify_search": "Get Lucky Daft Punk"
+  },
+  {
+    "artist": "Katy Perry",
+    "track": "Roar",
+    "year": 2013,
+    "difficulty": "medium",
+    "spotify_search": "Roar Katy Perry"
+  },
+  {
+    "artist": "OneRepublic",
+    "track": "Counting Stars",
+    "year": 2013,
+    "difficulty": "medium",
+    "spotify_search": "Counting Stars OneRepublic"
+  },
+  {
+    "artist": "Ariana Grande ft. Iggy Azalea",
+    "track": "Problem",
+    "year": 2014,
+    "difficulty": "medium",
+    "spotify_search": "Problem Ariana Grande"
+  },
+  {
+    "artist": "Sam Smith",
+    "track": "Stay with Me",
+    "year": 2014,
+    "difficulty": "medium",
+    "spotify_search": "Stay with Me Sam Smith"
+  },
+  {
+    "artist": "Hozier",
+    "track": "Take Me to Church",
+    "year": 2014,
+    "difficulty": "medium",
+    "spotify_search": "Take Me to Church Hozier"
+  },
+  {
+    "artist": "Ed Sheeran",
+    "track": "Thinking Out Loud",
+    "year": 2014,
+    "difficulty": "medium",
+    "spotify_search": "Thinking Out Loud Ed Sheeran"
+  },
+  {
+    "artist": "Ellie Goulding",
+    "track": "Love Me Like You Do",
+    "year": 2015,
+    "difficulty": "medium",
+    "spotify_search": "Love Me Like You Do Ellie Goulding"
+  },
+  {
+    "artist": "Wiz Khalifa ft. Charlie Puth",
+    "track": "See You Again",
+    "year": 2015,
+    "difficulty": "medium",
+    "spotify_search": "See You Again Wiz Khalifa Charlie Puth"
+  },
+  {
+    "artist": "Adele",
+    "track": "Hello",
+    "year": 2015,
+    "difficulty": "medium",
+    "spotify_search": "Hello Adele"
+  },
+  {
+    "artist": "Shawn Mendes",
+    "track": "Stitches",
+    "year": 2015,
+    "difficulty": "medium",
+    "spotify_search": "Stitches Shawn Mendes"
+  },
+  {
+    "artist": "Justin Timberlake",
+    "track": "Can't Stop the Feeling!",
+    "year": 2016,
+    "difficulty": "medium",
+    "spotify_search": "Can't Stop the Feeling Justin Timberlake"
+  },
+  {
+    "artist": "Zayn",
+    "track": "Pillowtalk",
+    "year": 2016,
+    "difficulty": "medium",
+    "spotify_search": "Pillowtalk Zayn"
+  },
+  {
+    "artist": "Calvin Harris ft. Rihanna",
+    "track": "This Is What You Came For",
+    "year": 2016,
+    "difficulty": "medium",
+    "spotify_search": "This Is What You Came For Calvin Harris Rihanna"
+  },
+  {
+    "artist": "Sia",
+    "track": "Chandelier",
+    "year": 2014,
+    "difficulty": "medium",
+    "spotify_search": "Chandelier Sia"
+  },
+  {
+    "artist": "Bruno Mars",
+    "track": "24K Magic",
+    "year": 2016,
+    "difficulty": "medium",
+    "spotify_search": "24K Magic Bruno Mars"
+  },
+  {
+    "artist": "DJ Khaled ft. Justin Bieber",
+    "track": "I'm the One",
+    "year": 2017,
+    "difficulty": "medium",
+    "spotify_search": "I'm the One DJ Khaled"
+  },
+  {
+    "artist": "Portugal. The Man",
+    "track": "Feel It Still",
+    "year": 2017,
+    "difficulty": "medium",
+    "spotify_search": "Feel It Still Portugal The Man"
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "track": "HUMBLE.",
+    "year": 2017,
+    "difficulty": "medium",
+    "spotify_search": "HUMBLE Kendrick Lamar"
+  },
+  {
+    "artist": "Imagine Dragons",
+    "track": "Thunder",
+    "year": 2017,
+    "difficulty": "medium",
+    "spotify_search": "Thunder Imagine Dragons"
+  },
+  {
+    "artist": "Cardi B",
+    "track": "Bodak Yellow",
+    "year": 2017,
+    "difficulty": "medium",
+    "spotify_search": "Bodak Yellow Cardi B"
+  },
+  {
+    "artist": "Zedd ft. Maren Morris",
+    "track": "The Middle",
+    "year": 2018,
+    "difficulty": "medium",
+    "spotify_search": "The Middle Zedd Maren Morris"
+  },
+  {
+    "artist": "Childish Gambino",
+    "track": "This Is America",
+    "year": 2018,
+    "difficulty": "medium",
+    "spotify_search": "This Is America Childish Gambino"
+  },
+  {
+    "artist": "Marshmello & Bastille",
+    "track": "Happier",
+    "year": 2018,
+    "difficulty": "medium",
+    "spotify_search": "Happier Marshmello Bastille"
+  },
+  {
+    "artist": "Shawn Mendes & Camila Cabello",
+    "track": "Señorita",
+    "year": 2019,
+    "difficulty": "medium",
+    "spotify_search": "Senorita Shawn Mendes Camila Cabello"
+  },
+  {
+    "artist": "Post Malone & Swae Lee",
+    "track": "Sunflower",
+    "year": 2018,
+    "difficulty": "medium",
+    "spotify_search": "Sunflower Post Malone"
+  },
+  {
+    "artist": "Lewis Capaldi",
+    "track": "Someone You Loved",
+    "year": 2019,
+    "difficulty": "medium",
+    "spotify_search": "Someone You Loved Lewis Capaldi"
+  },
+  {
+    "artist": "Lizzo",
+    "track": "Truth Hurts",
+    "year": 2019,
+    "difficulty": "medium",
+    "spotify_search": "Truth Hurts Lizzo"
+  },
+  {
+    "artist": "DaBaby ft. Roddy Ricch",
+    "track": "Rockstar",
+    "year": 2020,
+    "difficulty": "medium",
+    "spotify_search": "Rockstar DaBaby Roddy Ricch"
+  },
+  {
+    "artist": "Megan Thee Stallion ft. Beyoncé",
+    "track": "Savage Remix",
+    "year": 2020,
+    "difficulty": "medium",
+    "spotify_search": "Savage Remix Megan Thee Stallion Beyonce"
+  },
+  {
+    "artist": "24kGoldn ft. iann dior",
+    "track": "Mood",
+    "year": 2020,
+    "difficulty": "medium",
+    "spotify_search": "Mood 24kGoldn iann dior"
+  }
+]

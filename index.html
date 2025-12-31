@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitster Clone - Music Timeline Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen active">
+        <div class="loading-content">
+            <h1>🎵 Hitster Clone</h1>
+            <p>Loading YouTube Player...</p>
+            <div id="loading-status">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Setup Screen -->
+    <div id="setup-screen" class="screen">
+        <div class="setup-content">
+            <h1>🎮 Game Setup</h1>
+            
+            <div class="setup-section">
+                <h2>Team Names</h2>
+                <div class="team-inputs">
+                    <input type="text" id="team1-name" placeholder="Team 1 Name" value="Team 1">
+                    <input type="text" id="team2-name" placeholder="Team 2 Name" value="Team 2">
+                </div>
+            </div>
+
+            <div class="setup-section">
+                <h2>Difficulty Level</h2>
+                <div class="difficulty-selector">
+                    <label class="difficulty-option">
+                        <input type="radio" name="difficulty" value="easy" checked>
+                        <span class="difficulty-label">
+                            <strong>Easy</strong>
+                            <small>Massive global hits, very distinctive eras</small>
+                        </span>
+                    </label>
+                    <label class="difficulty-option">
+                        <input type="radio" name="difficulty" value="medium">
+                        <span class="difficulty-label">
+                            <strong>Medium</strong>
+                            <small>Well-known songs, less obvious timing</small>
+                        </span>
+                    </label>
+                    <label class="difficulty-option">
+                        <input type="radio" name="difficulty" value="hard">
+                        <span class="difficulty-label">
+                            <strong>Hard</strong>
+                            <small>Deeper cuts, international hits</small>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="setup-section">
+                <h2>Win Condition</h2>
+                <label>
+                    First to <input type="number" id="win-count" value="10" min="5" max="20"> songs
+                </label>
+            </div>
+
+            <button id="start-game" class="btn-primary btn-large">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <header class="game-header">
+            <div class="header-left">
+                <h1>🎵 Hitster Clone</h1>
+            </div>
+            <div class="header-center">
+                <div id="current-song-display" class="current-song">
+                    <div class="song-info">
+                        <span class="song-artist" id="current-artist">-</span>
+                        <span class="song-title" id="current-title">-</span>
+                    </div>
+                    <div class="playback-controls">
+                        <button id="play-pause-btn" class="btn-icon" disabled>▶️</button>
+                        <div class="progress-bar">
+                            <div id="playback-progress" class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="settings-btn" class="btn-secondary">⚙️ Settings</button>
+            </div>
+        </header>
+
+        <main class="game-main">
+            <!-- Team 1 Timeline -->
+            <section class="team-section" id="team1-section">
+                <div class="team-header">
+                    <h2 id="team1-display-name">Team 1</h2>
+                    <div class="team-score">
+                        <span id="team1-score">0</span> / <span id="team1-target">10</span>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div id="team1-timeline" class="timeline">
+                        <!-- Timeline cards will be added here dynamically -->
+                    </div>
+                    <div id="team1-placement-zones" class="placement-zones">
+                        <!-- Placement zones appear when it's this team's turn -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Controls -->
+            <section class="game-controls">
+                <div class="turn-indicator">
+                    <div id="current-turn-display">
+                        <strong id="active-team-name">Team 1</strong>'s Turn
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="draw-card-btn" class="btn-primary btn-large">
+                        🎲 Draw New Song
+                    </button>
+                </div>
+
+                <div id="placement-instructions" class="instructions hidden">
+                    <p>Click where you think this song belongs in your timeline</p>
+                </div>
+
+                <div id="result-display" class="result-display hidden">
+                    <!-- Shows correct/incorrect after placement -->
+                </div>
+            </section>
+
+            <!-- Team 2 Timeline -->
+            <section class="team-section" id="team2-section">
+                <div class="team-header">
+                    <h2 id="team2-display-name">Team 2</h2>
+                    <div class="team-score">
+                        <span id="team2-score">0</span> / <span id="team2-target">10</span>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div id="team2-timeline" class="timeline">
+                        <!-- Timeline cards will be added here dynamically -->
+                    </div>
+                    <div id="team2-placement-zones" class="placement-zones">
+                        <!-- Placement zones appear when it's this team's turn -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Victory Screen -->
+    <div id="victory-screen" class="screen">
+        <div class="victory-content">
+            <h1>🎉 Victory!</h1>
+            <h2 id="winner-name">Team 1</h2>
+            <p id="winner-message">Wins with a perfect timeline!</p>
+            <div class="victory-stats">
+                <div class="stat">
+                    <strong id="winner-score">10</strong>
+                    <span>Songs Placed</span>
+                </div>
+            </div>
+            <div class="victory-buttons">
+                <button id="play-again-btn" class="btn-primary btn-large">Play Again</button>
+                <button id="new-setup-btn" class="btn-secondary">New Game Setup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button id="close-settings" class="btn-close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-item">
+                    <label>Playback Volume</label>
+                    <input type="range" id="volume-slider" min="0" max="100" value="80">
+                    <span id="volume-display">80%</span>
+                </div>
+                <div class="setting-item">
+                    <label>Song Preview Length</label>
+                    <select id="preview-length">
+                        <option value="15">15 seconds</option>
+                        <option value="30" selected>30 seconds</option>
+                        <option value="45">45 seconds</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <button id="end-game-btn" class="btn-danger">End Current Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden YouTube Player -->
+    <div id="youtube-player" style="display: none;"></div>
+
+    <!-- Game Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/youtube.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

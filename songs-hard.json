@@ -1,0 +1,688 @@
+[
+  {
+    "artist": "The Mamas & the Papas",
+    "track": "Monday, Monday",
+    "year": 1966,
+    "difficulty": "hard",
+    "spotify_search": "Monday Monday The Mamas The Papas"
+  },
+  {
+    "artist": "The Box Tops",
+    "track": "The Letter",
+    "year": 1967,
+    "difficulty": "hard",
+    "spotify_search": "The Letter Box Tops"
+  },
+  {
+    "artist": "Tommy James and the Shondells",
+    "track": "Crimson and Clover",
+    "year": 1968,
+    "difficulty": "hard",
+    "spotify_search": "Crimson and Clover Tommy James"
+  },
+  {
+    "artist": "Sly & the Family Stone",
+    "track": "Everyday People",
+    "year": 1968,
+    "difficulty": "hard",
+    "spotify_search": "Everyday People Sly Family Stone"
+  },
+  {
+    "artist": "The 5th Dimension",
+    "track": "Aquarius/Let the Sunshine In",
+    "year": 1969,
+    "difficulty": "hard",
+    "spotify_search": "Aquarius Let the Sunshine In 5th Dimension"
+  },
+  {
+    "artist": "Norman Greenbaum",
+    "track": "Spirit in the Sky",
+    "year": 1969,
+    "difficulty": "hard",
+    "spotify_search": "Spirit in the Sky Norman Greenbaum"
+  },
+  {
+    "artist": "The Guess Who",
+    "track": "American Woman",
+    "year": 1970,
+    "difficulty": "hard",
+    "spotify_search": "American Woman Guess Who"
+  },
+  {
+    "artist": "War",
+    "track": "Low Rider",
+    "year": 1975,
+    "difficulty": "hard",
+    "spotify_search": "Low Rider War"
+  },
+  {
+    "artist": "Shocking Blue",
+    "track": "Venus",
+    "year": 1970,
+    "difficulty": "hard",
+    "spotify_search": "Venus Shocking Blue"
+  },
+  {
+    "artist": "Harry Nilsson",
+    "track": "Without You",
+    "year": 1971,
+    "difficulty": "hard",
+    "spotify_search": "Without You Harry Nilsson"
+  },
+  {
+    "artist": "Gilbert O'Sullivan",
+    "track": "Alone Again (Naturally)",
+    "year": 1972,
+    "difficulty": "hard",
+    "spotify_search": "Alone Again Naturally Gilbert O'Sullivan"
+  },
+  {
+    "artist": "The O'Jays",
+    "track": "Love Train",
+    "year": 1972,
+    "difficulty": "hard",
+    "spotify_search": "Love Train O'Jays"
+  },
+  {
+    "artist": "Jim Croce",
+    "track": "Time in a Bottle",
+    "year": 1973,
+    "difficulty": "hard",
+    "spotify_search": "Time in a Bottle Jim Croce"
+  },
+  {
+    "artist": "Blue Swede",
+    "track": "Hooked on a Feeling",
+    "year": 1974,
+    "difficulty": "hard",
+    "spotify_search": "Hooked on a Feeling Blue Swede"
+  },
+  {
+    "artist": "Carl Douglas",
+    "track": "Kung Fu Fighting",
+    "year": 1974,
+    "difficulty": "hard",
+    "spotify_search": "Kung Fu Fighting Carl Douglas"
+  },
+  {
+    "artist": "Pilot",
+    "track": "Magic",
+    "year": 1975,
+    "difficulty": "hard",
+    "spotify_search": "Magic Pilot"
+  },
+  {
+    "artist": "Hot Chocolate",
+    "track": "You Sexy Thing",
+    "year": 1975,
+    "difficulty": "hard",
+    "spotify_search": "You Sexy Thing Hot Chocolate"
+  },
+  {
+    "artist": "Walter Murphy",
+    "track": "A Fifth of Beethoven",
+    "year": 1976,
+    "difficulty": "hard",
+    "spotify_search": "A Fifth of Beethoven Walter Murphy"
+  },
+  {
+    "artist": "The Emotions",
+    "track": "Best of My Love",
+    "year": 1977,
+    "difficulty": "hard",
+    "spotify_search": "Best of My Love Emotions"
+  },
+  {
+    "artist": "Thelma Houston",
+    "track": "Don't Leave Me This Way",
+    "year": 1977,
+    "difficulty": "hard",
+    "spotify_search": "Don't Leave Me This Way Thelma Houston"
+  },
+  {
+    "artist": "Ram Jam",
+    "track": "Black Betty",
+    "year": 1977,
+    "difficulty": "hard",
+    "spotify_search": "Black Betty Ram Jam"
+  },
+  {
+    "artist": "Boney M.",
+    "track": "Rivers of Babylon",
+    "year": 1978,
+    "difficulty": "hard",
+    "spotify_search": "Rivers of Babylon Boney M"
+  },
+  {
+    "artist": "Anita Ward",
+    "track": "Ring My Bell",
+    "year": 1979,
+    "difficulty": "hard",
+    "spotify_search": "Ring My Bell Anita Ward"
+  },
+  {
+    "artist": "M",
+    "track": "Pop Muzik",
+    "year": 1979,
+    "difficulty": "hard",
+    "spotify_search": "Pop Muzik M"
+  },
+  {
+    "artist": "The Buggles",
+    "track": "Video Killed the Radio Star",
+    "year": 1979,
+    "difficulty": "hard",
+    "spotify_search": "Video Killed the Radio Star Buggles"
+  },
+  {
+    "artist": "Irene Cara",
+    "track": "Fame",
+    "year": 1980,
+    "difficulty": "hard",
+    "spotify_search": "Fame Irene Cara"
+  },
+  {
+    "artist": "The Gap Band",
+    "track": "You Dropped a Bomb on Me",
+    "year": 1982,
+    "difficulty": "hard",
+    "spotify_search": "You Dropped a Bomb on Me Gap Band"
+  },
+  {
+    "artist": "Musical Youth",
+    "track": "Pass the Dutchie",
+    "year": 1982,
+    "difficulty": "hard",
+    "spotify_search": "Pass the Dutchie Musical Youth"
+  },
+  {
+    "artist": "Eddy Grant",
+    "track": "Electric Avenue",
+    "year": 1982,
+    "difficulty": "hard",
+    "spotify_search": "Electric Avenue Eddy Grant"
+  },
+  {
+    "artist": "Nena",
+    "track": "99 Luftballons",
+    "year": 1983,
+    "difficulty": "hard",
+    "spotify_search": "99 Luftballons Nena"
+  },
+  {
+    "artist": "Men Without Hats",
+    "track": "The Safety Dance",
+    "year": 1983,
+    "difficulty": "hard",
+    "spotify_search": "The Safety Dance Men Without Hats"
+  },
+  {
+    "artist": "Kajagoogoo",
+    "track": "Too Shy",
+    "year": 1983,
+    "difficulty": "hard",
+    "spotify_search": "Too Shy Kajagoogoo"
+  },
+  {
+    "artist": "The Reflex",
+    "track": "Duran Duran",
+    "year": 1984,
+    "difficulty": "hard",
+    "spotify_search": "The Reflex Duran Duran"
+  },
+  {
+    "artist": "Alphaville",
+    "track": "Big in Japan",
+    "year": 1984,
+    "difficulty": "hard",
+    "spotify_search": "Big in Japan Alphaville"
+  },
+  {
+    "artist": "Dead or Alive",
+    "track": "You Spin Me Round (Like a Record)",
+    "year": 1984,
+    "difficulty": "hard",
+    "spotify_search": "You Spin Me Round Dead or Alive"
+  },
+  {
+    "artist": "Laura Branigan",
+    "track": "Self Control",
+    "year": 1984,
+    "difficulty": "hard",
+    "spotify_search": "Self Control Laura Branigan"
+  },
+  {
+    "artist": "Phil Collins",
+    "track": "Sussudio",
+    "year": 1985,
+    "difficulty": "hard",
+    "spotify_search": "Sussudio Phil Collins"
+  },
+  {
+    "artist": "Falco",
+    "track": "Rock Me Amadeus",
+    "year": 1985,
+    "difficulty": "hard",
+    "spotify_search": "Rock Me Amadeus Falco"
+  },
+  {
+    "artist": "Mr. Mister",
+    "track": "Broken Wings",
+    "year": 1985,
+    "difficulty": "hard",
+    "spotify_search": "Broken Wings Mr. Mister"
+  },
+  {
+    "artist": "Robert Palmer",
+    "track": "Addicted to Love",
+    "year": 1986,
+    "difficulty": "hard",
+    "spotify_search": "Addicted to Love Robert Palmer"
+  },
+  {
+    "artist": "Berlin",
+    "track": "Take My Breath Away",
+    "year": 1986,
+    "difficulty": "hard",
+    "spotify_search": "Take My Breath Away Berlin"
+  },
+  {
+    "artist": "Nu Shooz",
+    "track": "I Can't Wait",
+    "year": 1986,
+    "difficulty": "hard",
+    "spotify_search": "I Can't Wait Nu Shooz"
+  },
+  {
+    "artist": "Gregory Abbott",
+    "track": "Shake You Down",
+    "year": 1986,
+    "difficulty": "hard",
+    "spotify_search": "Shake You Down Gregory Abbott"
+  },
+  {
+    "artist": "Lisa Lisa and Cult Jam",
+    "track": "Head to Toe",
+    "year": 1987,
+    "difficulty": "hard",
+    "spotify_search": "Head to Toe Lisa Lisa Cult Jam"
+  },
+  {
+    "artist": "Cutting Crew",
+    "track": "(I Just) Died in Your Arms",
+    "year": 1987,
+    "difficulty": "hard",
+    "spotify_search": "I Just Died in Your Arms Cutting Crew"
+  },
+  {
+    "artist": "Starship",
+    "track": "Nothing's Gonna Stop Us Now",
+    "year": 1987,
+    "difficulty": "hard",
+    "spotify_search": "Nothing's Gonna Stop Us Now Starship"
+  },
+  {
+    "artist": "Debbie Gibson",
+    "track": "Foolish Beat",
+    "year": 1988,
+    "difficulty": "hard",
+    "spotify_search": "Foolish Beat Debbie Gibson"
+  },
+  {
+    "artist": "Salt-N-Pepa",
+    "track": "Push It",
+    "year": 1987,
+    "difficulty": "hard",
+    "spotify_search": "Push It Salt-N-Pepa"
+  },
+  {
+    "artist": "Fine Young Cannibals",
+    "track": "She Drives Me Crazy",
+    "year": 1989,
+    "difficulty": "hard",
+    "spotify_search": "She Drives Me Crazy Fine Young Cannibals"
+  },
+  {
+    "artist": "Soul II Soul",
+    "track": "Back to Life",
+    "year": 1989,
+    "difficulty": "hard",
+    "spotify_search": "Back to Life Soul II Soul"
+  },
+  {
+    "artist": "Neneh Cherry",
+    "track": "Buffalo Stance",
+    "year": 1988,
+    "difficulty": "hard",
+    "spotify_search": "Buffalo Stance Neneh Cherry"
+  },
+  {
+    "artist": "Deee-Lite",
+    "track": "Groove Is in the Heart",
+    "year": 1990,
+    "difficulty": "hard",
+    "spotify_search": "Groove Is in the Heart Deee-Lite"
+  },
+  {
+    "artist": "Londonbeat",
+    "track": "I've Been Thinking About You",
+    "year": 1990,
+    "difficulty": "hard",
+    "spotify_search": "I've Been Thinking About You Londonbeat"
+  },
+  {
+    "artist": "Marky Mark and the Funky Bunch",
+    "track": "Good Vibrations",
+    "year": 1991,
+    "difficulty": "hard",
+    "spotify_search": "Good Vibrations Marky Mark"
+  },
+  {
+    "artist": "Sophie B. Hawkins",
+    "track": "Damn I Wish I Was Your Lover",
+    "year": 1992,
+    "difficulty": "hard",
+    "spotify_search": "Damn I Wish I Was Your Lover Sophie B Hawkins"
+  },
+  {
+    "artist": "KWS",
+    "track": "Please Don't Go",
+    "year": 1992,
+    "difficulty": "hard",
+    "spotify_search": "Please Don't Go KWS"
+  },
+  {
+    "artist": "Snow",
+    "track": "Informer",
+    "year": 1992,
+    "difficulty": "hard",
+    "spotify_search": "Informer Snow"
+  },
+  {
+    "artist": "2 Unlimited",
+    "track": "No Limit",
+    "year": 1993,
+    "difficulty": "hard",
+    "spotify_search": "No Limit 2 Unlimited"
+  },
+  {
+    "artist": "Culture Beat",
+    "track": "Mr. Vain",
+    "year": 1993,
+    "difficulty": "hard",
+    "spotify_search": "Mr. Vain Culture Beat"
+  },
+  {
+    "artist": "Spin Doctors",
+    "track": "Two Princes",
+    "year": 1993,
+    "difficulty": "hard",
+    "spotify_search": "Two Princes Spin Doctors"
+  },
+  {
+    "artist": "Corona",
+    "track": "The Rhythm of the Night",
+    "year": 1994,
+    "difficulty": "hard",
+    "spotify_search": "The Rhythm of the Night Corona"
+  },
+  {
+    "artist": "Real McCoy",
+    "track": "Another Night",
+    "year": 1994,
+    "difficulty": "hard",
+    "spotify_search": "Another Night Real McCoy"
+  },
+  {
+    "artist": "Des'ree",
+    "track": "You Gotta Be",
+    "year": 1994,
+    "difficulty": "hard",
+    "spotify_search": "You Gotta Be Des'ree"
+  },
+  {
+    "artist": "Scatman John",
+    "track": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+    "year": 1994,
+    "difficulty": "hard",
+    "spotify_search": "Scatman Scatman John"
+  },
+  {
+    "artist": "Rednex",
+    "track": "Cotton Eye Joe",
+    "year": 1994,
+    "difficulty": "hard",
+    "spotify_search": "Cotton Eye Joe Rednex"
+  },
+  {
+    "artist": "Los Del Rio",
+    "track": "Macarena",
+    "year": 1995,
+    "difficulty": "hard",
+    "spotify_search": "Macarena Los Del Rio"
+  },
+  {
+    "artist": "Blackstreet",
+    "track": "No Diggity",
+    "year": 1996,
+    "difficulty": "hard",
+    "spotify_search": "No Diggity Blackstreet"
+  },
+  {
+    "artist": "Eiffel 65",
+    "track": "Blue (Da Ba Dee)",
+    "year": 1998,
+    "difficulty": "hard",
+    "spotify_search": "Blue Da Ba Dee Eiffel 65"
+  },
+  {
+    "artist": "Len",
+    "track": "Steal My Sunshine",
+    "year": 1999,
+    "difficulty": "hard",
+    "spotify_search": "Steal My Sunshine Len"
+  },
+  {
+    "artist": "Lou Bega",
+    "track": "Mambo No. 5 (A Little Bit of...)",
+    "year": 1999,
+    "difficulty": "hard",
+    "spotify_search": "Mambo No. 5 Lou Bega"
+  },
+  {
+    "artist": "Vengaboys",
+    "track": "Boom, Boom, Boom, Boom!!",
+    "year": 1999,
+    "difficulty": "hard",
+    "spotify_search": "Boom Boom Boom Boom Vengaboys"
+  },
+  {
+    "artist": "Baha Men",
+    "track": "Who Let the Dogs Out",
+    "year": 2000,
+    "difficulty": "hard",
+    "spotify_search": "Who Let the Dogs Out Baha Men"
+  },
+  {
+    "artist": "Dido",
+    "track": "Thank You",
+    "year": 2000,
+    "difficulty": "hard",
+    "spotify_search": "Thank You Dido"
+  },
+  {
+    "artist": "Enya",
+    "track": "Only Time",
+    "year": 2000,
+    "difficulty": "hard",
+    "spotify_search": "Only Time Enya"
+  },
+  {
+    "artist": "Lifehouse",
+    "track": "Hanging by a Moment",
+    "year": 2000,
+    "difficulty": "hard",
+    "spotify_search": "Hanging by a Moment Lifehouse"
+  },
+  {
+    "artist": "Nelly",
+    "track": "Ride wit Me",
+    "year": 2001,
+    "difficulty": "hard",
+    "spotify_search": "Ride wit Me Nelly"
+  },
+  {
+    "artist": "Blu Cantrell ft. Sean Paul",
+    "track": "Breathe",
+    "year": 2003,
+    "difficulty": "hard",
+    "spotify_search": "Breathe Blu Cantrell Sean Paul"
+  },
+  {
+    "artist": "Kelis",
+    "track": "Milkshake",
+    "year": 2003,
+    "difficulty": "hard",
+    "spotify_search": "Milkshake Kelis"
+  },
+  {
+    "artist": "D12",
+    "track": "My Band",
+    "year": 2004,
+    "difficulty": "hard",
+    "spotify_search": "My Band D12"
+  },
+  {
+    "artist": "The Killers",
+    "track": "Mr. Brightside",
+    "year": 2004,
+    "difficulty": "hard",
+    "spotify_search": "Mr. Brightside The Killers"
+  },
+  {
+    "artist": "Ciara ft. Missy Elliott",
+    "track": "1, 2 Step",
+    "year": 2004,
+    "difficulty": "hard",
+    "spotify_search": "1 2 Step Ciara"
+  },
+  {
+    "artist": "Natasha Bedingfield",
+    "track": "Unwritten",
+    "year": 2004,
+    "difficulty": "hard",
+    "spotify_search": "Unwritten Natasha Bedingfield"
+  },
+  {
+    "artist": "Gym Class Heroes ft. Patrick Stump",
+    "track": "Cupid's Chokehold",
+    "year": 2006,
+    "difficulty": "hard",
+    "spotify_search": "Cupid's Chokehold Gym Class Heroes"
+  },
+  {
+    "artist": "Akon",
+    "track": "Smack That",
+    "year": 2006,
+    "difficulty": "hard",
+    "spotify_search": "Smack That Akon"
+  },
+  {
+    "artist": "Yung Joc",
+    "track": "It's Goin' Down",
+    "year": 2006,
+    "difficulty": "hard",
+    "spotify_search": "It's Goin Down Yung Joc"
+  },
+  {
+    "artist": "Shop Boyz",
+    "track": "Party Like a Rockstar",
+    "year": 2007,
+    "difficulty": "hard",
+    "spotify_search": "Party Like a Rockstar Shop Boyz"
+  },
+  {
+    "artist": "Sean Kingston",
+    "track": "Beautiful Girls",
+    "year": 2007,
+    "difficulty": "hard",
+    "spotify_search": "Beautiful Girls Sean Kingston"
+  },
+  {
+    "artist": "MGMT",
+    "track": "Kids",
+    "year": 2008,
+    "difficulty": "hard",
+    "spotify_search": "Kids MGMT"
+  },
+  {
+    "artist": "Far East Movement",
+    "track": "Like a G6",
+    "year": 2010,
+    "difficulty": "hard",
+    "spotify_search": "Like a G6 Far East Movement"
+  },
+  {
+    "artist": "Mike Posner",
+    "track": "Cooler Than Me",
+    "year": 2010,
+    "difficulty": "hard",
+    "spotify_search": "Cooler Than Me Mike Posner"
+  },
+  {
+    "artist": "Karmin",
+    "track": "Brokenhearted",
+    "year": 2012,
+    "difficulty": "hard",
+    "spotify_search": "Brokenhearted Karmin"
+  },
+  {
+    "artist": "Baauer",
+    "track": "Harlem Shake",
+    "year": 2012,
+    "difficulty": "hard",
+    "spotify_search": "Harlem Shake Baauer"
+  },
+  {
+    "artist": "Capital Cities",
+    "track": "Safe and Sound",
+    "year": 2013,
+    "difficulty": "hard",
+    "spotify_search": "Safe and Sound Capital Cities"
+  },
+  {
+    "artist": "Tove Lo",
+    "track": "Habits (Stay High)",
+    "year": 2014,
+    "difficulty": "hard",
+    "spotify_search": "Habits Stay High Tove Lo"
+  },
+  {
+    "artist": "Omi",
+    "track": "Cheerleader",
+    "year": 2014,
+    "difficulty": "hard",
+    "spotify_search": "Cheerleader Omi"
+  },
+  {
+    "artist": "Silentó",
+    "track": "Watch Me (Whip/Nae Nae)",
+    "year": 2015,
+    "difficulty": "hard",
+    "spotify_search": "Watch Me Whip Nae Nae Silento"
+  },
+  {
+    "artist": "Desiigner",
+    "track": "Panda",
+    "year": 2016,
+    "difficulty": "hard",
+    "spotify_search": "Panda Desiigner"
+  },
+  {
+    "artist": "Rae Sremmurd",
+    "track": "Black Beatles",
+    "year": 2016,
+    "difficulty": "hard",
+    "spotify_search": "Black Beatles Rae Sremmurd"
+  }
+]
