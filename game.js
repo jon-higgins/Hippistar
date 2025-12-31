@@ -81,24 +81,43 @@ class HitsterGame {
 
     // Give each team a starting anchor song
     async giveStartingSongs() {
+        console.log('giveStartingSongs called. Database has', this.songDatabase.length, 'songs');
+
         // Select two well-known songs from different decades as starting points
-        const startingSongs = this.songDatabase.filter(song => 
+        const startingSongs = this.songDatabase.filter(song =>
             !this.usedSongs.has(song.track)
         ).slice(0, 2);
 
+        console.log('Selected starting songs:', startingSongs.length);
+
+        if (startingSongs.length < 2) {
+            console.error('Not enough songs in database!');
+            alert('Error: Not enough songs loaded. Please refresh the page.');
+            return;
+        }
+
         for (let i = 0; i < 2; i++) {
             const song = startingSongs[i];
+            console.log(`Adding starting song ${i+1}:`, song.track, 'by', song.artist);
             this.usedSongs.add(song.track);
-            
-            // Search and get YouTube video info
-            const videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-            
+
+            // Search and get YouTube video info (don't let this block initialization)
+            let videoInfo = null;
+            try {
+                videoInfo = await youtubeManager.searchVideo(song.spotify_search);
+                console.log('YouTube search result for', song.track, ':', videoInfo ? 'found' : 'not found');
+            } catch (error) {
+                console.error('YouTube search failed for', song.track, ':', error);
+            }
+
             this.teams[i].timeline.push({
                 ...song,
                 videoId: videoInfo ? videoInfo.videoId : null,
                 isAnchor: true
             });
         }
+
+        console.log('Starting songs added. Used songs count:', this.usedSongs.size);
     }
 
     // Get current team

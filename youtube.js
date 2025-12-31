@@ -68,6 +68,15 @@ class YouTubeManager {
 
         try {
             const response = await fetch(url);
+
+            if (!response.ok) {
+                console.warn('YouTube API returned status:', response.status);
+                if (response.status === 400) {
+                    console.warn('Invalid YouTube API key. Please update config.js with your API key.');
+                }
+                return null;
+            }
+
             const data = await response.json();
 
             if (data.items && data.items.length > 0) {
