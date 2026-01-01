@@ -32,10 +32,11 @@ class GameUI {
             this.hideSettings();
         });
 
-        // Volume control (disabled for Spotify embeds)
+        // Volume control
         document.getElementById('volume-slider').addEventListener('input', (e) => {
+            const volume = parseInt(e.target.value);
+            youtubeManager.setVolume(volume);
             document.getElementById('volume-display').textContent = `${e.target.value}%`;
-            // Note: Volume control not available with Spotify iframe embeds
         });
 
         // End game
@@ -54,10 +55,9 @@ class GameUI {
             this.showScreen('setup');
         });
 
-        // Play/pause button (limited control with Spotify embeds)
+        // Play/pause button
         document.getElementById('play-pause-btn').addEventListener('click', () => {
-            // Note: Limited control with Spotify iframe embeds
-            // Users should use the controls in the embed player
+            youtubeManager.togglePlayback();
         });
     }
 
@@ -73,9 +73,9 @@ class GameUI {
     async initialize() {
         try {
             const loadingStatus = document.getElementById('loading-status');
-            loadingStatus.textContent = 'Loading Spotify Player...';
+            loadingStatus.textContent = 'Loading YouTube Player...';
 
-            await spotifyManager.initialize();
+            await youtubeManager.initialize();
 
             loadingStatus.textContent = 'Ready!';
 
@@ -83,9 +83,9 @@ class GameUI {
                 this.showScreen('setup');
             }, 500);
         } catch (error) {
-            console.error('Spotify initialization failed:', error);
+            console.error('YouTube initialization failed:', error);
             document.getElementById('loading-status').textContent =
-                'Error: Failed to initialize Spotify player';
+                'Error: YouTube player failed to load. Check console for details.';
         }
     }
 
@@ -285,7 +285,7 @@ class GameUI {
         this.showScreen('victory');
 
         // Stop any playing music
-        spotifyManager.stop();
+        youtubeManager.pause();
     }
 
     // Play again with same settings
