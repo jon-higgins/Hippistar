@@ -20,12 +20,32 @@
     <div id="setup-screen" class="screen">
         <div class="setup-content">
             <h1>🎮 Game Setup</h1>
-            
+
+            <div class="setup-section">
+                <h2>Number of Teams</h2>
+                <div class="team-count-selector">
+                    <label class="team-count-option">
+                        <input type="radio" name="team-count" value="2" checked>
+                        <span class="team-count-label">2 Teams</span>
+                    </label>
+                    <label class="team-count-option">
+                        <input type="radio" name="team-count" value="3">
+                        <span class="team-count-label">3 Teams</span>
+                    </label>
+                    <label class="team-count-option">
+                        <input type="radio" name="team-count" value="4">
+                        <span class="team-count-label">4 Teams</span>
+                    </label>
+                </div>
+            </div>
+
             <div class="setup-section">
                 <h2>Team Names</h2>
-                <div class="team-inputs">
+                <div class="team-inputs" id="team-name-inputs">
                     <input type="text" id="team1-name" placeholder="Team 1 Name" value="Team 1">
                     <input type="text" id="team2-name" placeholder="Team 2 Name" value="Team 2">
+                    <input type="text" id="team3-name" placeholder="Team 3 Name" value="Team 3" style="display: none;">
+                    <input type="text" id="team4-name" placeholder="Team 4 Name" value="Team 4" style="display: none;">
                 </div>
             </div>
 
@@ -147,6 +167,42 @@
                         <!-- Timeline cards will be added here dynamically -->
                     </div>
                     <div id="team2-placement-zones" class="placement-zones">
+                        <!-- Placement zones appear when it's this team's turn -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team 3 Timeline (hidden by default) -->
+            <section class="team-section" id="team3-section" style="display: none;">
+                <div class="team-header">
+                    <h2 id="team3-display-name">Team 3</h2>
+                    <div class="team-score">
+                        <span id="team3-score">0</span> / <span id="team3-target">10</span>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div id="team3-timeline" class="timeline">
+                        <!-- Timeline cards will be added here dynamically -->
+                    </div>
+                    <div id="team3-placement-zones" class="placement-zones">
+                        <!-- Placement zones appear when it's this team's turn -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team 4 Timeline (hidden by default) -->
+            <section class="team-section" id="team4-section" style="display: none;">
+                <div class="team-header">
+                    <h2 id="team4-display-name">Team 4</h2>
+                    <div class="team-score">
+                        <span id="team4-score">0</span> / <span id="team4-target">10</span>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <div id="team4-timeline" class="timeline">
+                        <!-- Timeline cards will be added here dynamically -->
+                    </div>
+                    <div id="team4-placement-zones" class="placement-zones">
                         <!-- Placement zones appear when it's this team's turn -->
                     </div>
                 </div>

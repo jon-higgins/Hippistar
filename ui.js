@@ -13,6 +13,14 @@ class GameUI {
     }
 
     initializeEventListeners() {
+        // Team count selector - show/hide team name inputs
+        document.querySelectorAll('input[name="team-count"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const teamCount = parseInt(e.target.value);
+                this.updateTeamInputs(teamCount);
+            });
+        });
+
         // Start game
         document.getElementById('start-game').addEventListener('click', () => {
             this.startGame();
@@ -69,6 +77,18 @@ class GameUI {
         this.screens[screenName].classList.add('active');
     }
 
+    // Update team name inputs based on team count
+    updateTeamInputs(teamCount) {
+        for (let i = 1; i <= 4; i++) {
+            const input = document.getElementById(`team${i}-name`);
+            if (i <= teamCount) {
+                input.style.display = 'block';
+            } else {
+                input.style.display = 'none';
+            }
+        }
+    }
+
     // Initialize app
     async initialize() {
         try {
@@ -91,19 +111,36 @@ class GameUI {
 
     // Start the game
     async startGame() {
-        const team1Name = document.getElementById('team1-name').value || 'Team 1';
-        const team2Name = document.getElementById('team2-name').value || 'Team 2';
+        const teamCount = parseInt(document.querySelector('input[name="team-count"]:checked').value);
+        const teamNames = [];
+
+        // Collect team names
+        for (let i = 1; i <= teamCount; i++) {
+            const name = document.getElementById(`team${i}-name`).value || `Team ${i}`;
+            teamNames.push(name);
+        }
+
         const difficulty = document.querySelector('input[name="difficulty"]:checked').value;
         const winCount = parseInt(document.getElementById('win-count').value);
 
-        // Initialize game
-        await game.initialize(team1Name, team2Name, difficulty, winCount);
+        // Initialize game with all teams
+        await game.initialize(teamNames, difficulty, winCount);
 
-        // Update UI
-        document.getElementById('team1-display-name').textContent = team1Name;
-        document.getElementById('team2-display-name').textContent = team2Name;
-        document.getElementById('team1-target').textContent = winCount;
-        document.getElementById('team2-target').textContent = winCount;
+        // Show/hide team sections and update UI for active teams
+        for (let i = 1; i <= 4; i++) {
+            const section = document.getElementById(`team${i}-section`);
+            if (i <= teamCount) {
+                section.style.display = 'block';
+                document.getElementById(`team${i}-display-name`).textContent = teamNames[i-1];
+                document.getElementById(`team${i}-target`).textContent = winCount;
+            } else {
+                section.style.display = 'none';
+            }
+        }
+
+        // Update game-main grid layout based on team count
+        const gameMain = document.querySelector('.game-main');
+        gameMain.dataset.teamCount = teamCount;
 
         // Render initial timelines
         this.renderTimelines();
@@ -308,18 +345,17 @@ class GameUI {
 
     // Play again with same settings
     async playAgain() {
-        const team1Name = game.teams[0].name;
-        const team2Name = game.teams[1].name;
+        const teamNames = game.teams.map(team => team.name);
         const difficulty = game.difficulty;
         const winCount = game.winCount;
 
-        await game.initialize(team1Name, team2Name, difficulty, winCount);
+        await game.initialize(teamNames, difficulty, winCount);
         this.renderTimelines();
         this.updateTurnIndicator();
         this.hideResult();
-        
+
         document.getElementById('draw-card-btn').disabled = false;
-        
+
         this.showScreen('game');
     }
 

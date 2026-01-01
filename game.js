@@ -14,26 +14,21 @@ class HitsterGame {
     }
 
     // Initialize game with settings
-    async initialize(team1Name, team2Name, difficulty, winCount) {
-        this.teams = [
-            {
-                name: team1Name,
-                score: 0,
-                timeline: [],
-                target: winCount
-            },
-            {
-                name: team2Name,
-                score: 0,
-                timeline: [],
-                target: winCount
-            }
-        ];
+    async initialize(teamNames, difficulty, winCount) {
+        // Create teams based on teamNames array
+        this.teams = teamNames.map(name => ({
+            name: name,
+            score: 0,
+            timeline: [],
+            target: winCount
+        }));
 
         this.difficulty = difficulty;
         this.winCount = winCount;
         this.currentTeamIndex = 0;
         this.usedSongs.clear();
+
+        console.log(`Initializing game with ${this.teams.length} teams`);
 
         // Load song database
         await this.loadSongDatabase();
@@ -81,22 +76,24 @@ class HitsterGame {
 
     // Give each team a starting anchor song
     async giveStartingSongs() {
+        const teamCount = this.teams.length;
         console.log('giveStartingSongs called. Database has', this.songDatabase.length, 'songs');
+        console.log('Giving starting songs to', teamCount, 'teams');
 
-        // Select two well-known songs from different decades as starting points
+        // Select enough songs for all teams
         const startingSongs = this.songDatabase.filter(song =>
             !this.usedSongs.has(song.track)
-        ).slice(0, 2);
+        ).slice(0, teamCount);
 
         console.log('Selected starting songs:', startingSongs.length);
 
-        if (startingSongs.length < 2) {
+        if (startingSongs.length < teamCount) {
             console.error('Not enough songs in database!');
             alert('Error: Not enough songs loaded. Please refresh the page.');
             return;
         }
 
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < teamCount; i++) {
             const song = startingSongs[i];
             console.log(`Adding starting song ${i+1}:`, song.track, 'by', song.artist);
             this.usedSongs.add(song.track);
