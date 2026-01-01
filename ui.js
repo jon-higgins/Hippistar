@@ -32,11 +32,10 @@ class GameUI {
             this.hideSettings();
         });
 
-        // Volume control
+        // Volume control (disabled for Spotify embeds)
         document.getElementById('volume-slider').addEventListener('input', (e) => {
-            const volume = parseInt(e.target.value);
-            youtubeManager.setVolume(volume);
             document.getElementById('volume-display').textContent = `${e.target.value}%`;
+            // Note: Volume control not available with Spotify iframe embeds
         });
 
         // End game
@@ -55,9 +54,10 @@ class GameUI {
             this.showScreen('setup');
         });
 
-        // Play/pause button
+        // Play/pause button (limited control with Spotify embeds)
         document.getElementById('play-pause-btn').addEventListener('click', () => {
-            youtubeManager.togglePlayback();
+            // Note: Limited control with Spotify iframe embeds
+            // Users should use the controls in the embed player
         });
     }
 
@@ -73,19 +73,19 @@ class GameUI {
     async initialize() {
         try {
             const loadingStatus = document.getElementById('loading-status');
-            loadingStatus.textContent = 'Loading YouTube Player...';
-            
-            await youtubeManager.initialize();
-            
+            loadingStatus.textContent = 'Loading Spotify Player...';
+
+            await spotifyManager.initialize();
+
             loadingStatus.textContent = 'Ready!';
-            
+
             setTimeout(() => {
                 this.showScreen('setup');
             }, 500);
         } catch (error) {
-            console.error('YouTube initialization failed:', error);
-            document.getElementById('loading-status').textContent = 
-                'Error: Please check your YouTube API key in js/config.js';
+            console.error('Spotify initialization failed:', error);
+            document.getElementById('loading-status').textContent =
+                'Error: Failed to initialize Spotify player';
         }
     }
 
@@ -281,11 +281,11 @@ class GameUI {
         document.getElementById('winner-name').textContent = team.name;
         document.getElementById('winner-score').textContent = team.score;
         document.getElementById('winner-message').textContent = 'Successfully placed all songs in chronological order!';
-        
+
         this.showScreen('victory');
-        
+
         // Stop any playing music
-        youtubeManager.pause();
+        spotifyManager.stop();
     }
 
     // Play again with same settings
