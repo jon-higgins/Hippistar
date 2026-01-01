@@ -121,9 +121,9 @@ class GameUI {
         const song = await game.drawSong();
 
         if (song) {
-            // Update current song display
-            document.getElementById('current-artist').textContent = song.artist;
-            document.getElementById('current-title').textContent = song.track;
+            // DON'T reveal song info yet - that's the challenge!
+            document.getElementById('current-artist').textContent = '🎵 Mystery Song';
+            document.getElementById('current-title').textContent = 'Place the card to reveal';
             document.getElementById('play-pause-btn').disabled = false;
 
             // Show placement instructions
@@ -202,16 +202,25 @@ class GameUI {
         const resultDisplay = document.getElementById('result-display');
         resultDisplay.classList.remove('hidden');
 
+        // NOW reveal the song info after placement
+        const currentSong = game.currentSong;
+        if (currentSong) {
+            document.getElementById('current-artist').textContent = currentSong.artist;
+            document.getElementById('current-title').textContent = currentSong.track;
+        }
+
         if (result.correct) {
             resultDisplay.className = 'result-display correct';
             resultDisplay.innerHTML = `
                 <h3>✅ Correct!</h3>
-                <p>The song was placed correctly in the timeline.</p>
+                <p><strong>${currentSong.artist} - ${currentSong.track}</strong></p>
+                <p>Year: ${currentSong.year}</p>
             `;
         } else {
             resultDisplay.className = 'result-display incorrect';
             resultDisplay.innerHTML = `
                 <h3>❌ Incorrect</h3>
+                <p><strong>${currentSong.artist} - ${currentSong.track}</strong></p>
                 <p>The song was from <strong>${result.correctYear}</strong></p>
             `;
         }
@@ -220,6 +229,10 @@ class GameUI {
     // Hide result display
     hideResult() {
         document.getElementById('result-display').classList.add('hidden');
+
+        // Clear the song display for next turn
+        document.getElementById('current-artist').textContent = '-';
+        document.getElementById('current-title').textContent = '-';
     }
 
     // Render team timelines
