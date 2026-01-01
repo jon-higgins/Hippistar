@@ -1,7 +1,7 @@
 // YouTube API Configuration
 const YouTubeConfig = {
     // Replace with your YouTube Data API v3 key from https://console.cloud.google.com/
-    apiKey: 'YOUR_YOUTUBE_API_KEY_HERE',
+    apiKey: 'AIzaSyBk2zZTSDTsWgxOviyUOfDBZu_wHgTAgck',
     
     // API endpoints
     apiBaseUrl: 'https://www.googleapis.com/youtube/v3',
