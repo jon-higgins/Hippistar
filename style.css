@@ -137,14 +137,14 @@ body {
 
 .team-count-selector {
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .team-count-option {
     display: flex;
     align-items: center;
-    padding: 12px 20px;
+    padding: 10px 15px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     cursor: pointer;
@@ -163,7 +163,7 @@ body {
 }
 
 .team-count-label {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -341,13 +341,13 @@ body {
     grid-template-columns: 1fr auto 1fr;
 }
 
-/* 3 teams: triangle layout with controls in center */
+/* 3 teams: 3 vertical lanes with controls below */
 .game-main[data-team-count="3"] {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas:
-        "team1 team2"
-        "controls controls"
-        "team3 team3";
+        "team1 team2 team3"
+        "controls controls controls";
 }
 
 .game-main[data-team-count="3"] #team1-section {
@@ -358,20 +358,21 @@ body {
     grid-area: team2;
 }
 
-.game-main[data-team-count="3"] .game-controls {
-    grid-area: controls;
-}
-
 .game-main[data-team-count="3"] #team3-section {
     grid-area: team3;
 }
 
-/* 4 teams: 2x2 grid with controls in center */
+.game-main[data-team-count="3"] .game-controls {
+    grid-area: controls;
+}
+
+/* 4 teams: 4 vertical lanes with controls below */
 .game-main[data-team-count="4"] {
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas:
-        "team1 controls team2"
-        "team3 controls team4";
+        "team1 team2 team3 team4"
+        "controls controls controls controls";
 }
 
 .game-main[data-team-count="4"] #team1-section {
@@ -382,16 +383,16 @@ body {
     grid-area: team2;
 }
 
-.game-main[data-team-count="4"] .game-controls {
-    grid-area: controls;
-}
-
 .game-main[data-team-count="4"] #team3-section {
     grid-area: team3;
 }
 
 .game-main[data-team-count="4"] #team4-section {
     grid-area: team4;
+}
+
+.game-main[data-team-count="4"] .game-controls {
+    grid-area: controls;
 }
 
 .team-section {
