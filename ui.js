@@ -241,8 +241,9 @@ class GameUI {
             const timeline = document.getElementById(`team${index + 1}-timeline`);
             timeline.innerHTML = '';
 
-            team.timeline.forEach((song, songIndex) => {
-                const card = this.createSongCard(song, songIndex === 0);
+            team.timeline.forEach((song) => {
+                // Use song.isAnchor property, not position in array
+                const card = this.createSongCard(song, song.isAnchor);
                 timeline.appendChild(card);
             });
 
@@ -255,6 +256,10 @@ class GameUI {
             zones.classList.remove('active');
             zones.innerHTML = '';
         });
+
+        // Clear song display when rendering timelines
+        document.getElementById('current-artist').textContent = '-';
+        document.getElementById('current-title').textContent = '-';
     }
 
     // Create a song card element
