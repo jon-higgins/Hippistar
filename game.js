@@ -101,18 +101,8 @@ class HitsterGame {
             console.log(`Adding starting song ${i+1}:`, song.track, 'by', song.artist);
             this.usedSongs.add(song.track);
 
-            // Search and get YouTube video info (don't let this block initialization)
-            let videoInfo = null;
-            try {
-                videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-                console.log('YouTube search result for', song.track, ':', videoInfo ? 'found' : 'not found');
-            } catch (error) {
-                console.error('YouTube search failed for', song.track, ':', error);
-            }
-
             this.teams[i].timeline.push({
                 ...song,
-                videoId: videoInfo ? videoInfo.videoId : null,
                 isAnchor: true
             });
         }
@@ -154,29 +144,21 @@ class HitsterGame {
         this.usedSongs.add(song.track);
         console.log('Drew song:', song.track, 'by', song.artist, '(', song.year, ')');
 
-        // Try to search YouTube for the video (optional - game works without it)
-        let videoInfo = null;
-        try {
-            videoInfo = await youtubeManager.searchVideo(song.spotify_search);
-            if (videoInfo) {
-                console.log('YouTube video found for:', song.track);
-                // Play the video
-                await youtubeManager.playVideo(videoInfo.videoId);
-            } else {
-                console.warn('No YouTube video found for:', song.track, '- continuing without audio');
+        // Play on Spotify if track ID is available
+        if (song.spotify_track_id) {
+            try {
+                console.log('Playing Spotify track:', song.spotify_track_id);
+                await spotifyManager.playTrack(song.spotify_track_id);
+            } catch (error) {
+                console.error('Spotify playback failed:', error);
+                console.warn('Continuing without audio playback');
             }
-        } catch (error) {
-            console.error('YouTube search failed for:', song.track, error);
-            console.warn('Continuing without audio playback');
+        } else {
+            console.warn('No Spotify track ID for:', song.track, '- continuing without audio');
         }
 
-        // Create current song (with or without YouTube video)
-        this.currentSong = {
-            ...song,
-            videoId: videoInfo ? videoInfo.videoId : null,
-            thumbnail: videoInfo ? videoInfo.thumbnail : null
-        };
-
+        // Create current song
+        this.currentSong = song;
         this.placementMode = true;
 
         return this.currentSong;
@@ -209,9 +191,9 @@ class HitsterGame {
         }
 
         this.placementMode = false;
-        
+
         // Stop the music
-        youtubeManager.pause();
+        spotifyManager.stop();
 
         return {
             correct: isCorrect,
